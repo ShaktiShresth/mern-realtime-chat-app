@@ -1,4 +1,4 @@
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, HeartHandshake } from "lucide-react";
 
 const NoChatSelected = () => {
   return (
@@ -17,9 +17,15 @@ const NoChatSelected = () => {
         </div>
 
         {/* Welcome Text */}
-        <h2 className="text-2xl font-bold">Welcome to Chatty!</h2>
+        <h2 className="text-2xl font-bold flex justify-center items-center gap-2">
+          Welcome to ChatWeb <HeartHandshake />
+        </h2>
         <p className="text-base-content/60">
-          Select a conversation from the sidebar to start chatting
+          Select a conversation from the sidebar to start communicating
+          <span>
+            {" "}
+            with your family, friends, or people all around the globe.
+          </span>
         </p>
       </div>
     </div>
